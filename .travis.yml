@@ -1,1 +1,19 @@
 language: java
+jdk:
+  - openjdk17
+
+brances:
+  only:
+    - master
+
+cache:
+  directories:
+    - '$HOME/ .2/repository'
+    - '$HOME/ .gradle'
+
+script: "./gradlew clean build"
+
+notification:
+  email:
+    recipients:
+      - sung2687@gmail.com
