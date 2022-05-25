@@ -2,9 +2,9 @@ language: java
 jdk:
   - openjdk17
 
-brances:
+branches:
   only:
-    - master
+    - main
 
 cache:
   directories:
